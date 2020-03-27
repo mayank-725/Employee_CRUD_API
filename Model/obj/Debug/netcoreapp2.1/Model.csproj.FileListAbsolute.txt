@@ -1,0 +1,12 @@
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\Model\bin\Debug\netcoreapp2.1\Model.deps.json
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\Model\bin\Debug\netcoreapp2.1\Model.runtimeconfig.json
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\Model\bin\Debug\netcoreapp2.1\Model.runtimeconfig.dev.json
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\Model\bin\Debug\netcoreapp2.1\Model.dll
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\Model\bin\Debug\netcoreapp2.1\Model.pdb
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\Model\obj\Debug\netcoreapp2.1\Model.csprojAssemblyReference.cache
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\Model\obj\Debug\netcoreapp2.1\Model.csproj.CoreCompileInputs.cache
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\Model\obj\Debug\netcoreapp2.1\Model.AssemblyInfoInputs.cache
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\Model\obj\Debug\netcoreapp2.1\Model.AssemblyInfo.cs
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\Model\obj\Debug\netcoreapp2.1\Model.dll
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\Model\obj\Debug\netcoreapp2.1\Model.pdb
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\Model\obj\Debug\netcoreapp2.1\Model.genruntimeconfig.cache

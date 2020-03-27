@@ -10,3 +10,13 @@ C:\Users\Dolphin\source\repos\EmployeeCRUDApp\EmployeeCRUDApp\obj\Debug\netcorea
 C:\Users\Dolphin\source\repos\EmployeeCRUDApp\EmployeeCRUDApp\obj\Debug\netcoreapp2.1\EmployeeCRUDApp.AssemblyInfo.cs
 C:\Users\Dolphin\source\repos\EmployeeCRUDApp\EmployeeCRUDApp\obj\Debug\netcoreapp2.1\EmployeeCRUDApp.RazorTargetAssemblyInfo.cache
 C:\Users\Dolphin\source\repos\EmployeeCRUDApp\EmployeeCRUDApp\obj\Debug\netcoreapp2.1\EmployeeCRUDApp.genruntimeconfig.cache
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\EmployeeCRUDApp\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\EmployeeCRUDApp\bin\Debug\netcoreapp2.1\EmployeeCRUDApp.pdb
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\EmployeeCRUDApp\bin\Debug\netcoreapp2.1\Model.dll
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\EmployeeCRUDApp\bin\Debug\netcoreapp2.1\Repository.dll
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\EmployeeCRUDApp\bin\Debug\netcoreapp2.1\Repository.pdb
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\EmployeeCRUDApp\bin\Debug\netcoreapp2.1\Model.pdb
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\EmployeeCRUDApp\obj\Debug\netcoreapp2.1\EmployeeCRUDApp.csproj.CoreCompileInputs.cache
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\EmployeeCRUDApp\obj\Debug\netcoreapp2.1\EmployeeCRUDApp.csproj.CopyComplete
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\EmployeeCRUDApp\obj\Debug\netcoreapp2.1\EmployeeCRUDApp.dll
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\EmployeeCRUDApp\obj\Debug\netcoreapp2.1\EmployeeCRUDApp.pdb
