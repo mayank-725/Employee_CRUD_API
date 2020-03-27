@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Model
 {
-    class EmployeeModel
+    public class EmployeeModel
     {
-        private int    employeeID;
+        private int  employeeID;
         private string name;
         private string emailID;
         private string password;

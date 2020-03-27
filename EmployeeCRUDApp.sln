@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeCRUDApp", "Employee
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{A2BA208C-F345-4EDC-8EA1-8A06283F9803}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{42518381-C9BF-41D7-8A09-53CC84918585}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{A2BA208C-F345-4EDC-8EA1-8A06283F9803}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2BA208C-F345-4EDC-8EA1-8A06283F9803}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2BA208C-F345-4EDC-8EA1-8A06283F9803}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42518381-C9BF-41D7-8A09-53CC84918585}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42518381-C9BF-41D7-8A09-53CC84918585}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42518381-C9BF-41D7-8A09-53CC84918585}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42518381-C9BF-41D7-8A09-53CC84918585}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

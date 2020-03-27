@@ -1,0 +1,12 @@
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\EmployeeCRUDApp\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\EmployeeCRUDApp\bin\Debug\netcoreapp2.1\EmployeeCRUDApp.deps.json
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\EmployeeCRUDApp\bin\Debug\netcoreapp2.1\EmployeeCRUDApp.runtimeconfig.json
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\EmployeeCRUDApp\bin\Debug\netcoreapp2.1\EmployeeCRUDApp.runtimeconfig.dev.json
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\EmployeeCRUDApp\bin\Debug\netcoreapp2.1\EmployeeCRUDApp.dll
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\EmployeeCRUDApp\obj\Debug\netcoreapp2.1\EmployeeCRUDApp.csprojAssemblyReference.cache
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\EmployeeCRUDApp\obj\Debug\netcoreapp2.1\EmployeeCRUDApp.RazorAssemblyInfo.cache
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\EmployeeCRUDApp\obj\Debug\netcoreapp2.1\EmployeeCRUDApp.RazorAssemblyInfo.cs
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\EmployeeCRUDApp\obj\Debug\netcoreapp2.1\EmployeeCRUDApp.AssemblyInfoInputs.cache
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\EmployeeCRUDApp\obj\Debug\netcoreapp2.1\EmployeeCRUDApp.AssemblyInfo.cs
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\EmployeeCRUDApp\obj\Debug\netcoreapp2.1\EmployeeCRUDApp.RazorTargetAssemblyInfo.cache
+C:\Users\Dolphin\source\repos\EmployeeCRUDApp\EmployeeCRUDApp\obj\Debug\netcoreapp2.1\EmployeeCRUDApp.genruntimeconfig.cache
