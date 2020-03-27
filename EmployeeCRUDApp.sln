@@ -5,9 +5,11 @@ VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmployeeCRUDApp", "EmployeeCRUDApp\EmployeeCRUDApp.csproj", "{1D4E0088-D939-46B4-BDD0-EAEAA148692C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{A2BA208C-F345-4EDC-8EA1-8A06283F9803}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model", "Model\Model.csproj", "{A2BA208C-F345-4EDC-8EA1-8A06283F9803}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "Repository\Repository.csproj", "{42518381-C9BF-41D7-8A09-53CC84918585}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repository", "Repository\Repository.csproj", "{42518381-C9BF-41D7-8A09-53CC84918585}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Manager", "Manager\Manager.csproj", "{0AC2A333-00DC-4BC1-88C0-88EF70C3F838}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{42518381-C9BF-41D7-8A09-53CC84918585}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42518381-C9BF-41D7-8A09-53CC84918585}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42518381-C9BF-41D7-8A09-53CC84918585}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AC2A333-00DC-4BC1-88C0-88EF70C3F838}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AC2A333-00DC-4BC1-88C0-88EF70C3F838}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AC2A333-00DC-4BC1-88C0-88EF70C3F838}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AC2A333-00DC-4BC1-88C0-88EF70C3F838}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
