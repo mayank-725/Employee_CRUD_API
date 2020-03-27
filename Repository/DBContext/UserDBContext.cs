@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Repository.DBContext
 {
-    class UserDBContext : DbContext
+    public class UserDBContext : DbContext
     {
        
         public UserDBContext(DbContextOptions<UserDBContext> options) : base(options)

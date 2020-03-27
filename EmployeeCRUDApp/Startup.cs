@@ -10,7 +10,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
-//using Repository.Context;
+using Repository.DBContext;
 
 namespace EmployeeCRUDApp
 {
@@ -43,12 +43,17 @@ namespace EmployeeCRUDApp
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseSwagger();
+                app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "myapi v1"); });
             }
 
-            app.Run(async (context) =>
-            {
-                await context.Response.WriteAsync("Hello World!");
-            });
+            
+            else
+            { 
+                app.UseHsts();
+            }
+            app.UseHttpsRedirection();
+            app.UseMvc();
         }
-    }
+    }   
 }
