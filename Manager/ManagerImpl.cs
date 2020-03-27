@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace Manager
 {
-    class ImpManager : IManager
+    public class ManagerImpl : IManager
     {
         private readonly IEmployeeRepo repo;
 
-        public ImpManager(IEmployeeRepo repo)
+        public ManagerImpl(IEmployeeRepo repo)
         {
             this.repo = repo;
         }

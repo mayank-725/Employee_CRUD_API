@@ -11,6 +11,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.OpenApi.Models;
 using Repository.DBContext;
+using Manager;
+using Repository;
 
 namespace EmployeeCRUDApp
 {
@@ -30,6 +32,9 @@ namespace EmployeeCRUDApp
         {
             services.AddDbContextPool<UserDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("UserDbConnection")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddTransient<IManager,ManagerImpl>();
+            services.AddTransient<IEmployeeRepo, EmployeeRepoImpl>();
 
             services.AddSwaggerGen(c =>
             {
