@@ -9,9 +9,9 @@ namespace Manager
 {
     public class ManagerImpl : IManager
     {
-        private readonly IEmployeeRepo repo;
+        private readonly IEmployeeRepository repo;
 
-        public ManagerImpl(IEmployeeRepo repo)
+        public ManagerImpl(IEmployeeRepository repo)
         {
             this.repo = repo;
         }

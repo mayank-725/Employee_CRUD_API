@@ -13,8 +13,8 @@ namespace EmployeeCRUDApp.Controller
     [ApiController]
     public class EmployeeController : ControllerBase
     {
-        public readonly IManager manager;
-        public EmployeeController(IManager manager)
+        public readonly IEmployeeManager manager;
+        public EmployeeController(IEmployeeManager manager)
         {
             this.manager = manager;
         }

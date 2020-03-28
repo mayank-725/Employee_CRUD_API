@@ -4714,6 +4714,20 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "Manager/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "Model": "1.0.0",
+          "Repository": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Manager.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Manager.dll": {}
+        }
+      },
       "Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
@@ -12883,6 +12897,11 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "Manager/1.0.0": {
+      "type": "project",
+      "path": "../Manager/Manager.csproj",
+      "msbuildProject": "../Manager/Manager.csproj"
+    },
     "Model/1.0.0": {
       "type": "project",
       "path": "../Model/Model.csproj",
@@ -12896,6 +12915,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
+      "Manager >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.AspNetCore.Razor.Design >= 2.1.2",
       "Microsoft.NETCore.App >= 2.1.0",
@@ -12930,6 +12950,9 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
+            "C:\\Users\\Dolphin\\source\\repos\\EmployeeCRUDApp\\Manager\\Manager.csproj": {
+              "projectPath": "C:\\Users\\Dolphin\\source\\repos\\EmployeeCRUDApp\\Manager\\Manager.csproj"
+            },
             "C:\\Users\\Dolphin\\source\\repos\\EmployeeCRUDApp\\Repository\\Repository.csproj": {
               "projectPath": "C:\\Users\\Dolphin\\source\\repos\\EmployeeCRUDApp\\Repository\\Repository.csproj"
             }
