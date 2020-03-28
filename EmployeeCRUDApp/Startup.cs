@@ -33,8 +33,8 @@ namespace EmployeeCRUDApp
             services.AddDbContextPool<UserDBContext>(options => options.UseSqlServer(Configuration.GetConnectionString("UserDbConnection")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            services.AddTransient<IManager,ManagerImpl>();
-            services.AddTransient<IEmployeeRepo, EmployeeRepoImpl>();
+            services.AddTransient<IEmployeeManager,EmployeeManager>();
+            services.AddTransient<IEmployeeRepository, EmployeeRepository>();
 
             services.AddSwaggerGen(c =>
             {
