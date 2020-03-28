@@ -1,11 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
+﻿//-----------------------------------------------------------------------
+// <copyright file="EmployeeModel.cs" company="BridgeLabz">
+//     Copyright © 2020
+// </copyright>
+// <creator name="Mayank Sachdeva"/>
+//-----------------------------------------------------------------------
 
 namespace Model
 {
+    using System.ComponentModel.DataAnnotations;
+    using System.ComponentModel.DataAnnotations.Schema;
+
     /// <summary>
     /// employee model class
     /// </summary>
@@ -14,7 +18,7 @@ namespace Model
         /// <summary>
         /// The employee identifier
         /// </summary>
-        private int  employeeID;
+        private int employeeID;
 
         /// <summary>
         /// The name
@@ -45,7 +49,7 @@ namespace Model
         /// Gets or sets the emp identifier.
         /// </summary>
         /// <value>
-        /// The emp identifier.
+        /// The employee identifier.
         /// </value>
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]
@@ -55,6 +59,7 @@ namespace Model
             {
                 return this.employeeID;
             }
+
             set
             {
                 this.employeeID = value;
@@ -73,6 +78,7 @@ namespace Model
             {
                 return this.name;
             }
+
             set
             {
                 this.name = value;
@@ -91,6 +97,7 @@ namespace Model
             {
                 return this.emailID;
             }
+
             set
             {
                 this.emailID = value;
@@ -109,6 +116,7 @@ namespace Model
             {
                 return this.password;
             }
+
             set
             {
                 this.password = value;
@@ -127,6 +135,7 @@ namespace Model
             {
                 return this.mobile;
             }
+
             set
             {
                 this.mobile = value;
@@ -145,6 +154,7 @@ namespace Model
             {
                 return this.address;
             }
+
             set
             {
                 this.address = value;

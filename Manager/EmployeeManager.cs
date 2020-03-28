@@ -1,12 +1,17 @@
-﻿using Model;
-using Repository;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
+﻿//-----------------------------------------------------------------------
+// <copyright file="EmployeeManager.cs" company="BridgeLabz">
+//     Copyright © 2020
+// </copyright>
+// <creator name="Mayank Sachdeva"/>
+//-----------------------------------------------------------------------
 
 namespace Manager
 {
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
+    using Model;
+    using Repository;
+
     /// <summary>
     /// employee manager class 
     /// </summary>
@@ -34,7 +39,7 @@ namespace Manager
         /// <returns>task integer</returns>
         public Task<int> AddEmployee(EmployeeModel employee)
         {
-            var result= this.repo.AddEmployee(employee);
+            var result = this.repo.AddEmployee(employee);
             return result;
         }
 
@@ -42,7 +47,7 @@ namespace Manager
         /// Deletes the employee.
         /// </summary>
         /// <param name="id">The identifier.</param>
-        /// <returns></returns>
+        /// <returns>employee model</returns>
         public EmployeeModel DeleteEmployee(int id)
         {
             return this.repo.DeleteEmployee(id);
@@ -51,7 +56,7 @@ namespace Manager
         /// <summary>
         /// Gets all employees.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>employee model</returns>
         public IEnumerable<EmployeeModel> GetAllEmployees()
         {
             return this.repo.GetAllEmployees();
@@ -61,7 +66,7 @@ namespace Manager
         /// Gets the employee.
         /// </summary>
         /// <param name="id">The identifier.</param>
-        /// <returns></returns>
+        /// <returns>employee model</returns>
         public EmployeeModel GetEmployee(int id)
         {
             return this.repo.GetEmployee(id);
@@ -71,10 +76,10 @@ namespace Manager
         /// Updates the employee.
         /// </summary>
         /// <param name="employeeChanges">The employee changes.</param>
-        /// <returns></returns>
+        /// <returns>task integer</returns>
         public Task<int> UpdateEmployee(EmployeeModel employeeChanges)
         {
-            var result= this.repo.UpdateEmployee(employeeChanges);
+            var result = this.repo.UpdateEmployee(employeeChanges);
 
             return result;
         }

@@ -1,14 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Model;
-using Manager;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿//-----------------------------------------------------------------------
+// <copyright file="EmployeeController.cs" company="BridgeLabz">
+//     Copyright © 2020
+// </copyright>
+// <creator name="Mayank Sachdeva"/>
+//-----------------------------------------------------------------------
 
 namespace EmployeeCRUDApp.Controller
 {
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
+    using Manager;
+    using Microsoft.AspNetCore.Mvc;
+    using Model;
+    
     /// <summary>
     /// controller class
     /// </summary>
@@ -20,7 +24,7 @@ namespace EmployeeCRUDApp.Controller
         /// <summary>
         /// The manager
         /// </summary>
-        public readonly IEmployeeManager manager;
+        public readonly IEmployeeManager Manager;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="EmployeeController"/> class.
@@ -28,19 +32,19 @@ namespace EmployeeCRUDApp.Controller
         /// <param name="manager">The manager.</param>
         public EmployeeController(IEmployeeManager manager)
         {
-            this.manager = manager;
+            this.Manager = manager;
         }
 
         /// <summary>
         /// Adds the employee.
         /// </summary>
         /// <param name="employee">The employee.</param>
-        /// <returns></returns>
+        /// <returns> action result type</returns>
         [Route("AddEmployee")]
         [HttpPost]
         public async Task<IActionResult> AddEmployee(Model.EmployeeModel employee)
         {
-            var result = await this.manager.AddEmployee(employee);
+            var result = await this.Manager.AddEmployee(employee);
             if (result == 1)
             {
                 return this.Ok(employee);
@@ -54,24 +58,24 @@ namespace EmployeeCRUDApp.Controller
         /// <summary>
         /// Gets all employees.
         /// </summary>
-        /// <returns></returns>
+        /// <returns> Employee Model</returns>
         [Route("GetAllEmployee")]
         [HttpGet]
         public IEnumerable<EmployeeModel> GetAllEmployees()
         {
-            return this.manager.GetAllEmployees();
+            return this.Manager.GetAllEmployees();
         }
 
         /// <summary>
         /// Updates the employee.
         /// </summary>
         /// <param name="employeeChanges">The employee changes.</param>
-        /// <returns></returns>
+        /// <returns>action result type</returns>
         [Route("UpdateEmployee")]
         [HttpPut]
         public async Task<IActionResult> UpdateEmployee(EmployeeModel employeeChanges)
         {
-            var result = await this.manager.UpdateEmployee(employeeChanges);
+            var result = await this.Manager.UpdateEmployee(employeeChanges);
             if (result == 1)
             {
                 return this.Ok(employeeChanges);
@@ -86,24 +90,24 @@ namespace EmployeeCRUDApp.Controller
         /// Deletes the employee.
         /// </summary>
         /// <param name="id">The identifier.</param>
-        /// <returns></returns>
+        /// <returns>employee model type</returns>
         [HttpDelete]
         [Route("DeleteEmployee")]
         public EmployeeModel DeleteEmployee(int id)
         {
-            return this.manager.DeleteEmployee(id);
+            return this.Manager.DeleteEmployee(id);
         }
 
         /// <summary>
         /// Gets the employee.
         /// </summary>
         /// <param name="id">The identifier.</param>
-        /// <returns></returns>
+        /// <returns>employee model</returns>
         [Route("GetEmployee")]
         [HttpGet]
         public EmployeeModel GetEmployee(int id)
         {
-            return this.manager.GetEmployee(id);
+            return this.Manager.GetEmployee(id);
         }
     }
 } 

@@ -1,17 +1,24 @@
-﻿using System;
+﻿//-----------------------------------------------------------------------
+// <copyright file="Program.cs" company="BridgeLabz">
+//     Copyright © 2020
+// </copyright>
+// <creator name="Mayank Sachdeva"/>
+//-----------------------------------------------------------------------
 
 namespace Repository
 {
+    using System;
+
     /// <summary>
     /// main program class
     /// </summary>
-    class Program
+    public class Program
     {
         /// <summary>
         /// Defines the entry point of the application.
         /// </summary>
         /// <param name="args">The arguments.</param>
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
         }

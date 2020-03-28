@@ -1,11 +1,16 @@
-﻿using Model;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
+﻿//-----------------------------------------------------------------------
+// <copyright file="IEmployeeRepository.cs" company="BridgeLabz">
+//     Copyright © 2020
+// </copyright>
+// <creator name="Mayank Sachdeva"/>
+//-----------------------------------------------------------------------
 
 namespace Repository
 {
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
+    using Model;
+
     /// <summary>
     /// employee repository
     /// </summary>
@@ -15,34 +20,34 @@ namespace Repository
         /// Gets the employee.
         /// </summary>
         /// <param name="id">The identifier.</param>
-        /// <returns></returns>
-        EmployeeModel GetEmployee(int id);
+        /// <returns>employee model type</returns>
+      EmployeeModel GetEmployee(int id);
 
         /// <summary>
         /// Gets all employees.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>employee model type</returns>
         IEnumerable<EmployeeModel> GetAllEmployees();
 
         /// <summary>
         /// Adds the employee.
         /// </summary>
         /// <param name="employee">The employee.</param>
-        /// <returns></returns>
+        /// <returns>task integer type</returns>
         Task<int> AddEmployee(EmployeeModel employee);
 
         /// <summary>
         /// Updates the employee.
         /// </summary>
         /// <param name="employeeChanges">The employee changes.</param>
-        /// <returns></returns>
+        /// <returns>task integer type</returns>
         Task<int> UpdateEmployee(EmployeeModel employeeChanges);
 
         /// <summary>
         /// Deletes the employee.
         /// </summary>
         /// <param name="id">The identifier.</param>
-        /// <returns></returns>
+        /// <returns>employee model type</returns>
         EmployeeModel DeleteEmployee(int id);
     }
 }
