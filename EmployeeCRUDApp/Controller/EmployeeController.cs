@@ -12,7 +12,9 @@ namespace EmployeeCRUDApp.Controller
     using Manager;
     using Microsoft.AspNetCore.Mvc;
     using Model;
-    
+    using Serilog;
+
+
     /// <summary>
     /// controller class
     /// </summary>
@@ -51,6 +53,7 @@ namespace EmployeeCRUDApp.Controller
             }
             else
             {
+                Log.Error("This is a Bad Request");
                 return this.BadRequest();
             }
         }
@@ -63,6 +66,7 @@ namespace EmployeeCRUDApp.Controller
         [HttpGet]
         public IEnumerable<EmployeeModel> GetAllEmployees()
         {
+            Log.Information("All Employees loaded");
             return this.Manager.GetAllEmployees();
         }
 
@@ -78,10 +82,12 @@ namespace EmployeeCRUDApp.Controller
             var result = await this.Manager.UpdateEmployee(employeeChanges);
             if (result == 1)
             {
+                Log.Information("Existing Employee Updated");
                 return this.Ok(employeeChanges);
             }
             else
             {
+                Log.Error("This is a Bad Request");
                 return this.BadRequest();
             }
         }
@@ -95,6 +101,7 @@ namespace EmployeeCRUDApp.Controller
         [Route("DeleteEmployee")]
         public EmployeeModel DeleteEmployee(int id)
         {
+            Log.Information("Employee Deleted");
             return this.Manager.DeleteEmployee(id);
         }
 

@@ -9,6 +9,8 @@ namespace EmployeeCRUDApp
 {
     using Microsoft.AspNetCore;
     using Microsoft.AspNetCore.Hosting;
+    using Serilog;
+    using System;
 
     /// <summary>
     /// main driver class
@@ -22,6 +24,13 @@ namespace EmployeeCRUDApp
         public static void Main(string[] args)
         {
             CreateWebHostBuilder(args).Build().Run();
+
+            Log.Logger = new LoggerConfiguration()
+            .MinimumLevel.Debug()
+            .WriteTo.Console()
+            .WriteTo.File(@"C:\Users\Dolphin\source\repos\EmployeeCRUDApp\EmployeeCRUDApp\logfile.txt", rollingInterval: RollingInterval.Day)
+            .CreateLogger();
+            Console.WriteLine("Hello World!");
         }
 
         /// <summary>
