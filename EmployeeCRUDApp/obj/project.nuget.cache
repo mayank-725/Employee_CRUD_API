@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "72fjCatGsjt5UhoeE+80/CCFxF30sXlEIqA53DFxWy2zvqCBJrNvOWFeSM+LdpaSFpaxNLgDo6U+YUQpU/oaNg==",
+  "dgSpecHash": "PTWDw3GpRh1Le7SX/dIWOT7krzfebbh416uBkUBCqkQ8essveiyQuZ4Dx7ammB7UyMApQNMFgv1RsICfviKR9w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Dolphin\\source\\repos\\EmployeeCRUDApp\\EmployeeCRUDApp\\EmployeeCRUDApp.csproj",
   "expectedPackageFiles": [
@@ -207,6 +207,9 @@
     "C:\\Users\\Dolphin\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Dolphin\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Dolphin\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Dolphin\\.nuget\\packages\\serilog\\2.9.0\\serilog.2.9.0.nupkg.sha512",
+    "C:\\Users\\Dolphin\\.nuget\\packages\\serilog.sinks.console\\3.1.1\\serilog.sinks.console.3.1.1.nupkg.sha512",
+    "C:\\Users\\Dolphin\\.nuget\\packages\\serilog.sinks.file\\4.1.0\\serilog.sinks.file.4.1.0.nupkg.sha512",
     "C:\\Users\\Dolphin\\.nuget\\packages\\swashbuckle.aspnetcore\\5.2.1\\swashbuckle.aspnetcore.5.2.1.nupkg.sha512",
     "C:\\Users\\Dolphin\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.2.1\\swashbuckle.aspnetcore.swagger.5.2.1.nupkg.sha512",
     "C:\\Users\\Dolphin\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.2.1\\swashbuckle.aspnetcore.swaggergen.5.2.1.nupkg.sha512",
@@ -300,6 +303,7 @@
     "C:\\Users\\Dolphin\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.1\\system.threading.tasks.extensions.4.5.1.nupkg.sha512",
     "C:\\Users\\Dolphin\\.nuget\\packages\\system.threading.tasks.parallel\\4.3.0\\system.threading.tasks.parallel.4.3.0.nupkg.sha512",
     "C:\\Users\\Dolphin\\.nuget\\packages\\system.threading.thread\\4.3.0\\system.threading.thread.4.3.0.nupkg.sha512",
+    "C:\\Users\\Dolphin\\.nuget\\packages\\system.threading.timer\\4.0.1\\system.threading.timer.4.0.1.nupkg.sha512",
     "C:\\Users\\Dolphin\\.nuget\\packages\\system.valuetuple\\4.3.0\\system.valuetuple.4.3.0.nupkg.sha512",
     "C:\\Users\\Dolphin\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Dolphin\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",

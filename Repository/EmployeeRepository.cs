@@ -11,6 +11,8 @@ namespace Repository
     using System.Threading.Tasks;
     using Model;
     using Repository.DBContext;
+    using Serilog;
+
 
     /// <summary>
     /// employee repository class
@@ -22,6 +24,14 @@ namespace Repository
         /// The user database context
         /// </summary>
         private readonly UserDBContext userDBContext;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="EmployeeRepository"/> class.
+        /// </summary>
+        public EmployeeRepository()
+        {
+        }
+        
 
         /// <summary>
         /// Initializes a new instance of the <see cref="EmployeeRepository"/> class.
@@ -39,6 +49,7 @@ namespace Repository
         /// <returns>task integer</returns>
         public Task<int> AddEmployee(EmployeeModel employee)
         {
+            Log.Information("New Employee Added!");
             this.userDBContext.Employees.Add(employee);
             var result = this.userDBContext.SaveChangesAsync();
             return result;

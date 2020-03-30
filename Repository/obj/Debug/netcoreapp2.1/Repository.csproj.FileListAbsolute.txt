@@ -8,7 +8,6 @@ C:\Users\Dolphin\source\repos\EmployeeCRUDApp\Repository\bin\Debug\netcoreapp2.1
 C:\Users\Dolphin\source\repos\EmployeeCRUDApp\Repository\bin\Debug\netcoreapp2.1\Repository.dll
 C:\Users\Dolphin\source\repos\EmployeeCRUDApp\Repository\bin\Debug\netcoreapp2.1\Repository.pdb
 C:\Users\Dolphin\source\repos\EmployeeCRUDApp\Repository\bin\Debug\netcoreapp2.1\Model.pdb
-C:\Users\Dolphin\source\repos\EmployeeCRUDApp\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CoreCompileInputs.cache
 C:\Users\Dolphin\source\repos\EmployeeCRUDApp\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CopyComplete
 C:\Users\Dolphin\source\repos\EmployeeCRUDApp\Repository\obj\Debug\netcoreapp2.1\Repository.dll
 C:\Users\Dolphin\source\repos\EmployeeCRUDApp\Repository\obj\Debug\netcoreapp2.1\Repository.pdb
