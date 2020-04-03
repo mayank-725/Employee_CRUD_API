@@ -94,5 +94,16 @@ namespace NUnitQuantityMeasurementTesting
             bool result = inch.Equals(null);
             Assert.IsTrue(result);
         }
+
+        ////----------------------------------------------------------------------------------------------------
+        ////                                     TestCase 1.8
+        ////----------------------------------------------------------------------------------------------------
+        [Test]
+        public void GivenInchReference_WhenChecked_ShouldReturnTrue()
+        {
+            Inch inch = new Inch();
+            bool result = inch.Equals(inch);
+            Assert.IsTrue(result);
+        }
     }
 }
