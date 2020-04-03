@@ -51,5 +51,14 @@ namespace NUnitQuantityMeasurementTesting
             double actual = feet.EqualsCheck(25);
             Assert.AreEqual(25, actual);
         }
+
+        [Test]
+        public void GivenZeroInchAndZeroInch_WhenComparedAndEqual_ShouldReturnEqual()
+        {
+            Inch inch = new Inch(0);
+            int result = inch.EqualsCheck(0);
+            Assert.AreEqual(0, result);
+
+        }
     }
 }
