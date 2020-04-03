@@ -35,5 +35,13 @@ namespace NUnitQuantityMeasurementTesting
             bool result = feet.Equals(feet);
             Assert.IsTrue(result);
         }
+
+        [Test]
+        public void GivenFeetTypeAndFeetType_WhenAnalyze_ShouldReturnTrue()
+        {
+            Feet feet = new Feet();
+            bool result = feet.Equals(new Feet());
+            Assert.IsTrue(result);
+        }
     }
 }
