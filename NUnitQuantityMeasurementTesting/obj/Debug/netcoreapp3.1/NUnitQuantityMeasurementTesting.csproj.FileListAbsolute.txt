@@ -1,0 +1,4 @@
+C:\Users\Sagar\source\repos\work\QuantityMeasurement\NUnitQuantityMeasurementTesting\obj\Debug\netcoreapp3.1\NUnitQuantityMeasurementTesting.csprojAssemblyReference.cache
+C:\Users\Sagar\source\repos\work\QuantityMeasurement\NUnitQuantityMeasurementTesting\obj\Debug\netcoreapp3.1\NUnitQuantityMeasurementTesting.csproj.CoreCompileInputs.cache
+C:\Users\Sagar\source\repos\work\QuantityMeasurement\NUnitQuantityMeasurementTesting\obj\Debug\netcoreapp3.1\NUnitQuantityMeasurementTesting.AssemblyInfoInputs.cache
+C:\Users\Sagar\source\repos\work\QuantityMeasurement\NUnitQuantityMeasurementTesting\obj\Debug\netcoreapp3.1\NUnitQuantityMeasurementTesting.AssemblyInfo.cs
