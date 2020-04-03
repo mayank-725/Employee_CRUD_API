@@ -129,5 +129,19 @@ namespace NUnitQuantityMeasurementTesting
             double result = inch.CheckValue();
             Assert.AreEqual(43, result);
         }
+
+        ////----------------------------------------------------------------------------------------------------
+        ////                                     TestCase 1.11
+        ////----------------------------------------------------------------------------------------------------
+
+        [Test]
+        public void GivenZeroFeetAndZeroInch_WhenAnalyze_ShouldReturnTrue()
+        {
+            Feet feet = new Feet(0);
+            int result = feet.EqualsCheck(0);
+            Inch inch = new Inch(0);
+            double result1 = inch.CheckValue();
+            Assert.AreEqual(result, result1);
+        }
     }
 }
