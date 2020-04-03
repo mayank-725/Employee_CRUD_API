@@ -56,7 +56,7 @@ namespace NUnitQuantityMeasurementTesting
         public void GivenZeroInchAndZeroInch_WhenComparedAndEqual_ShouldReturnEqual()
         {
             Inch inch = new Inch(0);
-            int result = inch.EqualsCheck(0);
+            double result = inch.CheckValue();
             Assert.AreEqual(0, result);
 
         }
