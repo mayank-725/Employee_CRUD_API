@@ -17,5 +17,14 @@ namespace NUnitQuantityMeasurementTesting
             bool result = feet.EqualsCheck(new Feet(0));
             Assert.IsTrue(result);
         }
+
+
+        [Test]
+        public void GivenNullFeet_WhenCompared_ShouldReturnTrue()
+        {
+            Feet feet = new Feet(null);
+            bool result = feet.Equals(new Feet(0));
+            Assert.IsTrue(result);
+        }
     }
 }
