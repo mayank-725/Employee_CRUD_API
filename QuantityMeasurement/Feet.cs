@@ -25,20 +25,19 @@ namespace QuantityMeasurement
 
             this.p = p;
         }
+
+
         public override bool Equals(object obj)
         {
-            if (obj == null)
-                return false;
-            else
+            if((obj == null) || Object.ReferenceEquals(this, obj) || this.GetType().Equals(obj.GetType()))
                 return true;
+
+               return false;
         }
      
-        public bool EqualsCheck(Feet feet)
+        public int  EqualsCheck(Feet feet)
         {
-            if (this.feet.Equals(feet.feet))
-                return true;
-            else
-                return false;
+            return this.feet;
         }
     }
 }
