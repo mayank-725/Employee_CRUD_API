@@ -35,7 +35,7 @@ namespace QuantityMeasurement
                return false;
         }
      
-        public int  EqualsCheck(Feet feet)
+        public int  EqualsCheck(int feet)
         {
             return this.feet;
         }

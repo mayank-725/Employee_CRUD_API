@@ -14,7 +14,7 @@ namespace NUnitQuantityMeasurementTesting
         public void GivenZeroFeetAndZeroFeet_WhenComparedAndEqual_ShouldReturnEqual()
         {
             Feet feet = new Feet(0);
-            int result = feet.EqualsCheck(new Feet(0));
+            int result = feet.EqualsCheck(0);
             Assert.AreEqual(0, result);
 
         }
@@ -42,6 +42,14 @@ namespace NUnitQuantityMeasurementTesting
             Feet feet = new Feet();
             bool result = feet.Equals(new Feet());
             Assert.IsTrue(result);
+        }
+
+        [Test]
+        public void GivenFeetValueAndFeetValue_WhenAnalyze_ShouldReturnTrue()
+        {
+            Feet feet = new Feet(25);
+            double actual = feet.EqualsCheck(25);
+            Assert.AreEqual(25, actual);
         }
     }
 }
