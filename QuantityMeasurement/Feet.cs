@@ -4,11 +4,35 @@ using System.Text;
 
 namespace QuantityMeasurement
 {
-    class Feet
+    public class Feet
     {
-        public int FeetLength()
+        public int feet;
+
+        public Feet(int feet)
         {
-            return 0;
+            this.feet = feet;
+        }
+
+       
+
+        public override bool Equals(object obj)
+        {
+            if (this.GetType().Equals(obj.GetType()))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public bool EqualsCheck(Feet feet)
+        {
+            if (this.feet.Equals(feet.feet))
+                return true;
+            else
+                return false;
         }
     }
 }
