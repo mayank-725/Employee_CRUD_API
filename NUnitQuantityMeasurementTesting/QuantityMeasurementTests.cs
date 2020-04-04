@@ -155,5 +155,18 @@ namespace NUnitQuantityMeasurementTesting
             double actual = feet.ConvertFeetToInch();
             Assert.AreNotEqual(1, actual);
         }
+
+
+        ////----------------------------------------------------------------------------------------------------
+        ////                                     TestCase 1.15
+        ////----------------------------------------------------------------------------------------------------
+
+        [Test]
+        public void GivenOneinchNotEqualsOneFeet_WhenAnalyze_ShouldReturnFalse()
+        {
+            UnitCheck inch = new UnitCheck("Inch", 1);
+            double actual = inch.ConvertInchToFeet();
+            Assert.AreNotEqual(1, actual);
+        }
     }
 }
