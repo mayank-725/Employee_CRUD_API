@@ -131,7 +131,7 @@ namespace NUnitQuantityMeasurementTesting
         }
 
         ////----------------------------------------------------------------------------------------------------
-        ////                                     TestCase 1.11
+        ////                                     TestCase 1.13
         ////----------------------------------------------------------------------------------------------------
 
         [Test]
@@ -143,5 +143,7 @@ namespace NUnitQuantityMeasurementTesting
             double result1 = inch.CheckValue();
             Assert.AreEqual(result, result1);
         }
+
+
     }
 }
