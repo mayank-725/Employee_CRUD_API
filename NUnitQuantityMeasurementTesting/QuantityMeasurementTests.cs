@@ -137,11 +137,11 @@ namespace NUnitQuantityMeasurementTesting
         [Test]
         public void GivenZeroFeetAndZeroInch_WhenAnalyze_ShouldReturnTrue()
         {
-            Feet feet = new Feet(0);
-            int result = feet.EqualsCheck(0);
-            Inch inch = new Inch(0);
-            double result1 = inch.CheckValue();
-            Assert.AreEqual(result, result1);
+            UnitCheck feet = new UnitCheck("Feet", 10);
+            double expected = feet.EqualsCheck();
+            UnitCheck inch = new UnitCheck("Inch", 10);
+            double actual = inch.EqualsCheck();
+            Assert.AreEqual(expected, actual);
         }
 
 
