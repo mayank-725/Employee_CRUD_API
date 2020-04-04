@@ -32,7 +32,7 @@ namespace NUnitQuantityMeasurementTesting
         [Test]
         public void GivenNullFeet_WhenCompared_ShouldReturnTrue()
         {
-            Feet feet = new Feet(null);
+            UnitCheck feet = new UnitCheck("Feet");
             bool result = feet.Equals(null);
             Assert.IsTrue(result);
         }
@@ -44,7 +44,7 @@ namespace NUnitQuantityMeasurementTesting
         [Test]
         public void GivenFeetReference_WhenChecked_ShouldReturnTrue()
         {
-            Feet feet = new Feet();
+            UnitCheck feet = new UnitCheck("Feet");
             bool result = feet.Equals(feet);
             Assert.IsTrue(result);
         }
@@ -55,8 +55,8 @@ namespace NUnitQuantityMeasurementTesting
         [Test]
         public void GivenFeetTypeAndFeetType_WhenAnalyze_ShouldReturnTrue()
         {
-            Feet feet = new Feet();
-            bool result = feet.Equals(new Feet());
+            UnitCheck feet = new UnitCheck("Feet");
+            bool result = feet.Equals(new UnitCheck());
             Assert.IsTrue(result);
         }
 
@@ -67,8 +67,8 @@ namespace NUnitQuantityMeasurementTesting
         [Test]
         public void GivenFeetValueAndFeetValue_WhenAnalyze_ShouldReturnTrue()
         {
-            Feet feet = new Feet(25);
-            double actual = feet.EqualsCheck(25);
+            UnitCheck feet = new UnitCheck("Feet", 25);
+            double actual = feet.EqualsCheck();
             Assert.AreEqual(25, actual);
         }
 
@@ -78,8 +78,8 @@ namespace NUnitQuantityMeasurementTesting
         [Test]
         public void GivenZeroInchAndZeroInch_WhenComparedAndEqual_ShouldReturnEqual()
         {
-            Inch inch = new Inch(0);
-            double result = inch.CheckValue();
+            UnitCheck inch = new UnitCheck("Inch", 0);
+            double result = inch.EqualsCheck();
             Assert.AreEqual(0, result);
 
         }
@@ -90,7 +90,7 @@ namespace NUnitQuantityMeasurementTesting
         [Test]
         public void GivenNullInch_WhenCompared_ShouldReturnTrue()
         {
-            Inch inch = new Inch();
+            UnitCheck inch = new UnitCheck("Inch",0);
             bool result = inch.Equals(null);
             Assert.IsTrue(result);
         }
@@ -101,7 +101,7 @@ namespace NUnitQuantityMeasurementTesting
         [Test]
         public void GivenInchReference_WhenChecked_ShouldReturnTrue()
         {
-            Inch inch = new Inch();
+            UnitCheck inch = new UnitCheck("Inch");
             bool result = inch.Equals(inch);
             Assert.IsTrue(result);
         }
@@ -113,8 +113,8 @@ namespace NUnitQuantityMeasurementTesting
         [Test]
         public void GivenInchTypeAndInchType_WhenAnalyze_ShouldReturnTrue()
         {
-            Inch inch = new Inch();
-            bool result = inch.Equals(new Inch());
+            UnitCheck inch = new UnitCheck("Inch");
+            bool result = inch.Equals(new UnitCheck());
             Assert.IsTrue(result);
         }
 
@@ -125,8 +125,8 @@ namespace NUnitQuantityMeasurementTesting
         [Test]
         public void GivenInchValueAndInchValue_WhenAnalyze_ShouldReturnTrue()
         {
-            Inch inch = new Inch(43);
-            double result = inch.CheckValue();
+            UnitCheck inch = new UnitCheck("Inch", 43);
+            double result = inch.EqualsCheck();
             Assert.AreEqual(43, result);
         }
 
