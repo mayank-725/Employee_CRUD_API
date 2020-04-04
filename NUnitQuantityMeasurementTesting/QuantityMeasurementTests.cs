@@ -424,7 +424,7 @@ namespace NUnitQuantityMeasurementTesting
         [Test]
         public void GivenValueTo_CelciusClass_WhenAnalyse_ReturnEqual()
         {
-          UnitCheck unit = new UnitCheck("Celcius", 0);
+          UnitCheck unit = new UnitCheck("Celsius", 0);
             Celsius celsius = new Celsius(0);
             double actual = celsius.CheckForEqualValue();
             double expected = unit.CheckForEqualValue();
@@ -458,7 +458,7 @@ namespace NUnitQuantityMeasurementTesting
         [Test]
         public void GivenValueTo_FarenheitClass_WhenAnalyse_ReturnEqual()
         {
-            UnitCheck unitCheck = new UnitCheck("Farenheit", 10);
+            UnitCheck unitCheck = new UnitCheck("Fahrenheit", 10);
             Fahrenheit farenheit = new Fahrenheit(10);
             double actual = farenheit.CheckForEqualValue();
             double expected = unitCheck.CheckEqualValue();
@@ -474,6 +474,46 @@ namespace NUnitQuantityMeasurementTesting
             Gram gram = new Gram(1000);
             double expected = gram.ValueCheck();
             Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void Given1CelciusWith1Celcius_WhenAnalyse_ReturnTrue()
+        {
+            UnitCheck unit= new UnitCheck("Celsius", 1);
+            double actual = unit.CheckEqualValue();
+            Celsius celcius = new Celsius(1);
+            double expected = celcius.CheckForEqualValue();
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void Given1CelciusWith2Celcius_WhenAnalyse_ReturnNotEqual()
+        {
+            UnitCheck unit = new UnitCheck("Celsius", 1);
+            double actual = unit.ConvertCelciusToFarenheit();
+            Celsius celsius = new Celsius(2);
+            double expected = celsius.CheckForEqualValue();
+            Assert.AreNotEqual(expected, actual);
+        }
+
+        [Test]
+        public void Given1CelciusWith33decimal8Farenheit_WhenAnalyse_ReturnEqual()
+        {
+            UnitCheck unit = new UnitCheck("Celsius", 1);
+            double actual = unit.ConvertCelciusToFarenheit();
+            Fahrenheit farenheit = new Fahrenheit(33.0d);
+            double expected = farenheit.CheckForEqualValue();
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void Given1CelciusWith50Farenheit_WhenAnalyse_ReturnNotEqual()
+        {
+            UnitCheck unit = new UnitCheck("Celsius", 1);
+            double actual = unit.ConvertCelciusToFarenheit();
+            Fahrenheit farenheit = new Fahrenheit(33.1);
+            double expected = farenheit.CheckForEqualValue();
+            Assert.AreNotEqual(expected, actual);
         }
     }
 }
