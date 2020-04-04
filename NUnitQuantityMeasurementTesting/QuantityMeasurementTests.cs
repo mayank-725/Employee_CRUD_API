@@ -192,5 +192,17 @@ namespace NUnitQuantityMeasurementTesting
             double actual = inch.ConvertInchToFeet();
             Assert.AreEqual(1, actual);
         }
+
+
+        ////----------------------------------------------------------------------------------------------------
+        ////                                     TestCase 1.17
+        ////----------------------------------------------------------------------------------------------------
+        [Test]
+        public void Given3FeetEqual1Yard_WhenAnalyze_ShouldReturnTrue()
+        {
+            UnitCheck feet = new UnitCheck("Feet", 3);
+            double actual = feet.ConverFeetintoYard();
+            Assert.AreEqual(1, actual);
+        }
     }
 }
