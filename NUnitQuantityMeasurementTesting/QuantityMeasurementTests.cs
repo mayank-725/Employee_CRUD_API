@@ -297,14 +297,24 @@ namespace NUnitQuantityMeasurementTesting
         }
 
         ////----------------------------------------------------------------------------------------------------
-        ////                                     TestCase 2.3
+        ////                                     TestCase 2.4
         ////----------------------------------------------------------------------------------------------------
         [Test]
-        public void GivenObjectOfGrameType_EqualsMethod_WhenAnalyse_ReturnTrue()
+        public void GivenObjectOfGramType_EqualsMethod_WhenAnalyse_ReturnTrue()
         {
             Gram gram = new Gram();
             bool actual = gram.Equals(new Gram());
             Assert.IsTrue(actual);
+        }
+
+        [Test]
+        public void GivenValueTo_GramClass_WhenAnalyse_ReturnEqual()
+        {
+            Gram gram = new Gram(10);
+            double actual = gram.ValueCheck();
+            UnitCheck unit = new UnitCheck("Gram", 10);
+            double expected = unit.CheckForEqualValue();
+            Assert.AreEqual(expected, actual);
         }
     }
 }

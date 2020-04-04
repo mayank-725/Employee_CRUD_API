@@ -24,6 +24,7 @@ namespace QuantityMeasurement
         {
             this.type = type;
             this.length = length;
+            this.weight = length;
         }
 
       
