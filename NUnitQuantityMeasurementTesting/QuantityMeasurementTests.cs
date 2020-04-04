@@ -195,7 +195,7 @@ namespace NUnitQuantityMeasurementTesting
 
 
         ////----------------------------------------------------------------------------------------------------
-        ////                                     TestCase 1.17
+        ////                                     TestCase 1.18
         ////----------------------------------------------------------------------------------------------------
         [Test]
         public void Given3FeetEqual1Yard_WhenAnalyze_ShouldReturnTrue()
@@ -203,6 +203,18 @@ namespace NUnitQuantityMeasurementTesting
             UnitCheck feet = new UnitCheck("Feet", 3);
             double actual = feet.ConverFeetintoYard();
             Assert.AreEqual(1, actual);
+        }
+
+
+        ////----------------------------------------------------------------------------------------------------
+        ////                                     TestCase 1.19
+        ////----------------------------------------------------------------------------------------------------
+        [Test]
+        public void Given1FeetNotEquals1Yard_WhenChecked_ShouldreturnTrue()
+        {
+            UnitCheck feet = new UnitCheck("Feet", 1);
+            double actual = feet.ConverFeetintoYard();
+            Assert.AreNotEqual(1, actual);
         }
     }
 }
