@@ -334,5 +334,12 @@ namespace NUnitQuantityMeasurementTesting
             Assert.AreEqual(expected, actual);
         }
 
+        [Test]
+        public void GivenNullTo_KiloGramClassEqualsMethod_WhenAnalyse_ReturnTrue()
+        {
+            KiloGram kilogram = new KiloGram(0);
+            bool actual = kilogram.Equals(null);
+            Assert.IsTrue(actual);
+        }
     }
 }
