@@ -36,7 +36,11 @@ namespace QuantityMeasurement
             return this.length;
         }
 
-        
+        public double ConvertFeetToInch()
+        {
+            return this.length * 12; ;
+        }
+
         public override bool Equals(object obj)
         {
             if ((obj == null) || Object.ReferenceEquals(this, obj) || this.GetType().Equals(obj.GetType()))
