@@ -464,5 +464,16 @@ namespace NUnitQuantityMeasurementTesting
             double expected = unitCheck.CheckEqualValue();
             Assert.AreEqual(expected, actual);
         }
+
+
+        [Test]
+        public void Given1KGWith1000GRAM_WhenAnaylse_returnEqual()
+        {
+            UnitCheck unit = new UnitCheck("Kilogram", 1);
+            double actual = unit.ConvertKiloGramToGram();
+            Gram gram = new Gram(1000);
+            double expected = gram.ValueCheck();
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
