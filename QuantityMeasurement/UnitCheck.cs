@@ -61,6 +61,11 @@ namespace QuantityMeasurement
             return this.length * 36;
         }
 
+        public double YardToFeet()
+        {
+            return this.length * 3;
+        }
+
         public override bool Equals(object obj)
         {
             if ((obj == null) || Object.ReferenceEquals(this, obj) || this.GetType().Equals(obj.GetType()))
