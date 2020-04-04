@@ -273,5 +273,16 @@ namespace NUnitQuantityMeasurementTesting
             double expected = unit.EqualsCheck();
             Assert.AreEqual(expected, actual);
         }
+
+        ////----------------------------------------------------------------------------------------------------
+        ////                                     TestCase 2.2
+        ////----------------------------------------------------------------------------------------------------
+        [Test]
+        public void GivenNullTo_GramClassEqualsFunction_WhenAnalyse_ReturnTrue()
+        {
+            Gram gram = new Gram();
+            bool actual = gram.Equals(null);
+            Assert.IsTrue(actual);
+        }
     }
 }
