@@ -284,5 +284,16 @@ namespace NUnitQuantityMeasurementTesting
             bool actual = gram.Equals(null);
             Assert.IsTrue(actual);
         }
+
+        ////----------------------------------------------------------------------------------------------------
+        ////                                     TestCase 2.2
+        ////----------------------------------------------------------------------------------------------------
+        [Test]
+        public void GivenReferenceTo_GramClassEqualsMethod_WhenAnalyse_ReturnTrue()
+        {
+            Gram gram = new Gram();
+            bool actual = gram.Equals(gram);
+            Assert.IsTrue(actual);
+        }
     }
 }
