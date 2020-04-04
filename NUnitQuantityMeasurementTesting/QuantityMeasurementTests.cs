@@ -393,5 +393,42 @@ namespace NUnitQuantityMeasurementTesting
             double expected = unit.CheckEqualValue();
             Assert.AreEqual(expected, actual);
         }
+
+        ////----------------------------------------------------------------------------------------------------
+        ////                                     TestCase 3.1
+        ////----------------------------------------------------------------------------------------------------
+        [Test]
+        public void GivenNullTo_CelciusClassEqualsMethod_WhenAnalyse_ReturnTrue()
+        {
+            Celsius celsius = new Celsius(0);
+            bool actual = celsius.Equals(null);
+            Assert.IsTrue(actual);
+        }
+
+        [Test]
+        public void GivenReferenceTo_CelciusClassEqualsMethod_WhenAnalyse_ReturnTrue()
+        {
+            Celsius celsius = new Celsius(0);
+            bool actual = celsius.Equals(celsius);
+            Assert.IsTrue(actual);
+        }
+
+        [Test]
+        public void GivenObjectTo_CelciusClassEqualsMethod_WhenAnalyse_ReturnTrue()
+        {
+            Celsius celsius = new Celsius(0);
+            bool actual = celsius.Equals(new Celsius());
+            Assert.IsTrue(actual);
+        }
+
+        [Test]
+        public void GivenValueTo_CelciusClass_WhenAnalyse_ReturnEqual()
+        {
+          UnitCheck unit = new UnitCheck("Celcius", 0);
+            Celsius celsius = new Celsius(0);
+            double actual = celsius.CheckForEqualValue();
+            double expected = unit.CheckForEqualValue();
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
