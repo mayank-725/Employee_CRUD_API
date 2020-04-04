@@ -286,13 +286,24 @@ namespace NUnitQuantityMeasurementTesting
         }
 
         ////----------------------------------------------------------------------------------------------------
-        ////                                     TestCase 2.2
+        ////                                     TestCase 2.3
         ////----------------------------------------------------------------------------------------------------
         [Test]
         public void GivenReferenceTo_GramClassEqualsMethod_WhenAnalyse_ReturnTrue()
         {
             Gram gram = new Gram();
             bool actual = gram.Equals(gram);
+            Assert.IsTrue(actual);
+        }
+
+        ////----------------------------------------------------------------------------------------------------
+        ////                                     TestCase 2.3
+        ////----------------------------------------------------------------------------------------------------
+        [Test]
+        public void GivenObjectOfGrameType_EqualsMethod_WhenAnalyse_ReturnTrue()
+        {
+            Gram gram = new Gram();
+            bool actual = gram.Equals(new Gram());
             Assert.IsTrue(actual);
         }
     }
