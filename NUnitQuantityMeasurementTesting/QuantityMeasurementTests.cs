@@ -216,5 +216,13 @@ namespace NUnitQuantityMeasurementTesting
             double actual = feet.ConverFeetintoYard();
             Assert.AreNotEqual(1, actual);
         }
+
+        [Test]
+        public void Given1InchNotEquals1Yard_WhenChecked_ShouldreturnTrue()
+        {
+            UnitCheck inch = new UnitCheck("Inch", 1);
+            double actual = inch.InchToYard();
+            Assert.AreNotEqual(1, actual);
+        }
     }
 }
