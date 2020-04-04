@@ -381,5 +381,17 @@ namespace NUnitQuantityMeasurementTesting
             Assert.AreEqual(expected, actual);
         }
 
+        ////----------------------------------------------------------------------------------------------------
+        ////                                     TestCase 3.0
+        ////----------------------------------------------------------------------------------------------------
+        [Test]
+        public void GivenValueIn_CelciusClassFunction_WhenAnalyse_ReturnEqual()
+        {
+            TemperatureConversion temperatureConversion = new TemperatureConversion("Celcius", 0);
+            Celcius celcius = new Celcius(0);
+            double actual = celcius.CheckForEqualValue();
+            double expected = temperatureConversion.CheckForEqualValue();
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
