@@ -260,5 +260,18 @@ namespace NUnitQuantityMeasurementTesting
             double actual = yard.YardToFeet();
             Assert.AreEqual(3, actual);
         }
+
+        ////----------------------------------------------------------------------------------------------------
+        ////                                     TestCase 2.1
+        ////----------------------------------------------------------------------------------------------------
+        [Test]
+        public void GivenValueIn_GramClassFunction_WhenAnalyse_ReturnEqual()
+        {
+            UnitCheck unit=new UnitCheck("Gram", 0);
+            Gram gram = new Gram(0);
+            double actual = gram.valueCheck();
+            double expected = unit.EqualsCheck();
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
