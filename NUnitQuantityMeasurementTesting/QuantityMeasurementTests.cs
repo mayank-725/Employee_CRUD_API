@@ -328,8 +328,9 @@ namespace NUnitQuantityMeasurementTesting
         public void GivenValueIn_KiloGramClassFunction_WhenAnalyse_ReturnEqual()
         {
             KiloGram kilogram = new KiloGram(0);
-            int actual = kilogram.GetKiloGram_Value();
-            int expected = 0;
+            UnitCheck unit = new UnitCheck();
+            double actual = kilogram.CheckForEqualValue();
+            double expected = unit.CheckForEqualValue();
             Assert.AreEqual(expected, actual);
         }
 
