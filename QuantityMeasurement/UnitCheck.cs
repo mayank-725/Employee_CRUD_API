@@ -13,6 +13,7 @@ namespace QuantityMeasurement
 
         public double weight;
 
+        public double temperature;
        
         public UnitCheck()
         {
@@ -20,11 +21,12 @@ namespace QuantityMeasurement
         }
 
       
-        public UnitCheck(string type, double length)
+        public UnitCheck(string type, double valuetype)
         {
             this.type = type;
-            this.length = length;
-            this.weight = length;
+            this.length = valuetype;
+            this.weight = valuetype;
+            this.temperature = valuetype;
         }
 
       
@@ -35,6 +37,11 @@ namespace QuantityMeasurement
         public double CheckForEqualValue()
         {
             return this.weight;
+        }
+
+        public double CheckEqualValue()
+        {
+            return this.temperature;
         }
 
         public double EqualsCheck()
@@ -81,6 +88,16 @@ namespace QuantityMeasurement
         public double ConvertKiloGramToGram()
         {
             return this.weight * 1000;
+        }
+
+        public double ConvertCelciusToFarenheit()
+        {
+            return this.temperature * ((9 / 5) + 32);
+        }
+
+        public double ConvertFarenheitToCelcius()
+        {
+            return ((this.temperature - 32) / 1.8);
         }
 
         public override bool Equals(object obj)

@@ -387,10 +387,10 @@ namespace NUnitQuantityMeasurementTesting
         [Test]
         public void GivenValueIn_CelciusClassFunction_WhenAnalyse_ReturnEqual()
         {
-            TemperatureConversion temperatureConversion = new TemperatureConversion("Celcius", 0);
-            Celcius celcius = new Celcius(0);
+            UnitCheck unit = new UnitCheck("Celcius", 0);
+            Celsius celcius = new Celsius(0);
             double actual = celcius.CheckForEqualValue();
-            double expected = temperatureConversion.CheckForEqualValue();
+            double expected = unit.CheckEqualValue();
             Assert.AreEqual(expected, actual);
         }
     }
