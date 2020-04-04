@@ -269,7 +269,7 @@ namespace NUnitQuantityMeasurementTesting
         {
             UnitCheck unit=new UnitCheck("Gram", 0);
             Gram gram = new Gram(0);
-            double actual = gram.valueCheck();
+            double actual = gram.ValueCheck();
             double expected = unit.EqualsCheck();
             Assert.AreEqual(expected, actual);
         }

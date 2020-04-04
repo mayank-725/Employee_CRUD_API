@@ -11,6 +11,8 @@ namespace QuantityMeasurement
        
         public double length;
 
+        public double weight;
+
        
         public UnitCheck()
         {
@@ -29,8 +31,11 @@ namespace QuantityMeasurement
         {
             this.type = type;
         }
+        public double CheckForEqualValue()
+        {
+            return this.weight;
+        }
 
-        
         public double EqualsCheck()
         {
             return this.length;
@@ -64,6 +69,17 @@ namespace QuantityMeasurement
         public double YardToFeet()
         {
             return this.length * 3;
+        }
+
+
+        public double ConvertGramToKiloGram()
+        {
+            return this.weight / 1000;
+        }
+
+        public double ConvertKiloGramToGram()
+        {
+            return this.weight * 1000;
         }
 
         public override bool Equals(object obj)
