@@ -307,6 +307,9 @@ namespace NUnitQuantityMeasurementTesting
             Assert.IsTrue(actual);
         }
 
+        ////----------------------------------------------------------------------------------------------------
+        ////                                     TestCase 2.5
+        ////----------------------------------------------------------------------------------------------------
         [Test]
         public void GivenValueTo_GramClass_WhenAnalyse_ReturnEqual()
         {
@@ -316,5 +319,19 @@ namespace NUnitQuantityMeasurementTesting
             double expected = unit.CheckForEqualValue();
             Assert.AreEqual(expected, actual);
         }
+
+
+        ////----------------------------------------------------------------------------------------------------
+        ////                                     TestCase 2.6
+        ////----------------------------------------------------------------------------------------------------
+        [Test]
+        public void GivenValueIn_KiloGramClassFunction_WhenAnalyse_ReturnEqual()
+        {
+            KiloGram kilogram = new KiloGram(0);
+            int actual = kilogram.GetKiloGram_Value();
+            int expected = 0;
+            Assert.AreEqual(expected, actual);
+        }
+
     }
 }
