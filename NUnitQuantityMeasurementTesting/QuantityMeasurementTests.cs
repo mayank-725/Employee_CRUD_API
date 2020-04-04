@@ -430,5 +430,39 @@ namespace NUnitQuantityMeasurementTesting
             double expected = unit.CheckForEqualValue();
             Assert.AreEqual(expected, actual);
         }
+
+        [Test]
+        public void GivenNullTo_FarenheitClassEqualsMethod_WhenAnalyse_ReturnTrue()
+        {
+            Fahrenheit farenheit = new Fahrenheit(0);
+            bool actual = farenheit.Equals(null);
+            Assert.IsTrue(actual);
+        }
+
+        [Test]
+        public void GivenReferenceTo_FarenheitClassEqualsMethod_WhenAnalyse_ReturnTrue()
+        {
+            Fahrenheit farenheit = new Fahrenheit(0);
+            bool actual = farenheit.Equals(farenheit);
+            Assert.IsTrue(actual);
+        }
+
+        [Test]
+        public void GivenObjectTo_FarenheitClassEqualsMethod_WhenAnalyse_ReturnTrue()
+        {
+            Fahrenheit farenheit = new Fahrenheit(0);
+            bool actual = farenheit.Equals(new Fahrenheit());
+            Assert.IsTrue(actual);
+        }
+
+        [Test]
+        public void GivenValueTo_FarenheitClass_WhenAnalyse_ReturnEqual()
+        {
+            UnitCheck unitCheck = new UnitCheck("Farenheit", 10);
+            Fahrenheit farenheit = new Fahrenheit(10);
+            double actual = farenheit.CheckForEqualValue();
+            double expected = unitCheck.CheckEqualValue();
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
