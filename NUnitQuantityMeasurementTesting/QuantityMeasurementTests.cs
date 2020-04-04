@@ -217,12 +217,37 @@ namespace NUnitQuantityMeasurementTesting
             Assert.AreNotEqual(1, actual);
         }
 
+        ////----------------------------------------------------------------------------------------------------
+        ////                                     TestCase 1.20
+        ////----------------------------------------------------------------------------------------------------
         [Test]
         public void Given1InchNotEquals1Yard_WhenChecked_ShouldreturnTrue()
         {
             UnitCheck inch = new UnitCheck("Inch", 1);
             double actual = inch.InchToYard();
             Assert.AreNotEqual(1, actual);
+        }
+
+        ////----------------------------------------------------------------------------------------------------
+        ////                                     TestCase 1.21
+        ////----------------------------------------------------------------------------------------------------
+        [Test]
+        public void Given1YardEquals36Inches_WhenChecked_ShouldreturnTrue()
+        {
+            UnitCheck yard = new UnitCheck("Yard", 1);
+            double actual = yard.YardToInch();
+            Assert.AreEqual(36, actual);
+        }
+
+        ////----------------------------------------------------------------------------------------------------
+        ////                                     TestCase 1.22
+        ////----------------------------------------------------------------------------------------------------
+        [Test]
+        public void Given36InchesEquals1Yard_WhenChecked_ShouldreturnTrue()
+        {
+            UnitCheck inch = new UnitCheck("Inch", 36);
+            double actual = inch.InchToYard();
+            Assert.AreEqual(1, actual);
         }
     }
 }
