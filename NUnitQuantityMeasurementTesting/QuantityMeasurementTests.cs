@@ -346,6 +346,9 @@ namespace NUnitQuantityMeasurementTesting
             Assert.IsTrue(actual);
         }
 
+        ////----------------------------------------------------------------------------------------------------
+        ////                                     TestCase 2.8
+        ////----------------------------------------------------------------------------------------------------
         [Test]
         public void GivenReferenceTo_KiloGramClassEqualsMethod_WhenAnalyse_ReturnTrue()
         {
@@ -354,5 +357,12 @@ namespace NUnitQuantityMeasurementTesting
             Assert.IsTrue(actual);
         }
 
+        [Test]
+        public void GivenObjectTo_KiloGramClassEqualsMethod_WhenAnalyse_ReturnTrue()
+        {
+            KiloGram kilogram = new KiloGram(0);
+            bool actual = kilogram.Equals(new KiloGram());
+            Assert.IsTrue(actual);
+        }
     }
 }
