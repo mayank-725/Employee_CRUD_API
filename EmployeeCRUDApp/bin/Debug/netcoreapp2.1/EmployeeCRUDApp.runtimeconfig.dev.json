@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\Dolphin\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\Dolphin\\.nuget\\packages"
+      "C:\\Users\\Sagar\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Sagar\\.nuget\\packages"
     ]
   }
 }

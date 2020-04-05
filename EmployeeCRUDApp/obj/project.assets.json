@@ -13091,19 +13091,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dolphin\\.nuget\\packages\\": {}
+    "C:\\Users\\Sagar\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dolphin\\source\\repos\\EmployeeCRUDApp\\EmployeeCRUDApp\\EmployeeCRUDApp.csproj",
+      "projectUniqueName": "C:\\Users\\Sagar\\source\\repos\\work\\Employee_CRUD_API\\EmployeeCRUDApp\\EmployeeCRUDApp.csproj",
       "projectName": "EmployeeCRUDApp",
-      "projectPath": "C:\\Users\\Dolphin\\source\\repos\\EmployeeCRUDApp\\EmployeeCRUDApp\\EmployeeCRUDApp.csproj",
-      "packagesPath": "C:\\Users\\Dolphin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dolphin\\source\\repos\\EmployeeCRUDApp\\EmployeeCRUDApp\\obj\\",
+      "projectPath": "C:\\Users\\Sagar\\source\\repos\\work\\Employee_CRUD_API\\EmployeeCRUDApp\\EmployeeCRUDApp.csproj",
+      "packagesPath": "C:\\Users\\Sagar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Sagar\\source\\repos\\work\\Employee_CRUD_API\\EmployeeCRUDApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Dolphin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Sagar\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13116,11 +13116,11 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\Dolphin\\source\\repos\\EmployeeCRUDApp\\Manager\\Manager.csproj": {
-              "projectPath": "C:\\Users\\Dolphin\\source\\repos\\EmployeeCRUDApp\\Manager\\Manager.csproj"
+            "C:\\Users\\Sagar\\source\\repos\\work\\Employee_CRUD_API\\Manager\\Manager.csproj": {
+              "projectPath": "C:\\Users\\Sagar\\source\\repos\\work\\Employee_CRUD_API\\Manager\\Manager.csproj"
             },
-            "C:\\Users\\Dolphin\\source\\repos\\EmployeeCRUDApp\\Repository\\Repository.csproj": {
-              "projectPath": "C:\\Users\\Dolphin\\source\\repos\\EmployeeCRUDApp\\Repository\\Repository.csproj"
+            "C:\\Users\\Sagar\\source\\repos\\work\\Employee_CRUD_API\\Repository\\Repository.csproj": {
+              "projectPath": "C:\\Users\\Sagar\\source\\repos\\work\\Employee_CRUD_API\\Repository\\Repository.csproj"
             }
           }
         }

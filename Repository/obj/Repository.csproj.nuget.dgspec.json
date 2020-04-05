@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Dolphin\\source\\repos\\EmployeeCRUDApp\\Repository\\Repository.csproj": {}
+    "C:\\Users\\Sagar\\source\\repos\\work\\Employee_CRUD_API\\Repository\\Repository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Dolphin\\source\\repos\\EmployeeCRUDApp\\Model\\Model.csproj": {
+    "C:\\Users\\Sagar\\source\\repos\\work\\Employee_CRUD_API\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dolphin\\source\\repos\\EmployeeCRUDApp\\Model\\Model.csproj",
+        "projectUniqueName": "C:\\Users\\Sagar\\source\\repos\\work\\Employee_CRUD_API\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "C:\\Users\\Dolphin\\source\\repos\\EmployeeCRUDApp\\Model\\Model.csproj",
-        "packagesPath": "C:\\Users\\Dolphin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dolphin\\source\\repos\\EmployeeCRUDApp\\Model\\obj\\",
+        "projectPath": "C:\\Users\\Sagar\\source\\repos\\work\\Employee_CRUD_API\\Model\\Model.csproj",
+        "packagesPath": "C:\\Users\\Sagar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sagar\\source\\repos\\work\\Employee_CRUD_API\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Dolphin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Sagar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -59,17 +59,17 @@
         }
       }
     },
-    "C:\\Users\\Dolphin\\source\\repos\\EmployeeCRUDApp\\Repository\\Repository.csproj": {
+    "C:\\Users\\Sagar\\source\\repos\\work\\Employee_CRUD_API\\Repository\\Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Dolphin\\source\\repos\\EmployeeCRUDApp\\Repository\\Repository.csproj",
+        "projectUniqueName": "C:\\Users\\Sagar\\source\\repos\\work\\Employee_CRUD_API\\Repository\\Repository.csproj",
         "projectName": "Repository",
-        "projectPath": "C:\\Users\\Dolphin\\source\\repos\\EmployeeCRUDApp\\Repository\\Repository.csproj",
-        "packagesPath": "C:\\Users\\Dolphin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Dolphin\\source\\repos\\EmployeeCRUDApp\\Repository\\obj\\",
+        "projectPath": "C:\\Users\\Sagar\\source\\repos\\work\\Employee_CRUD_API\\Repository\\Repository.csproj",
+        "packagesPath": "C:\\Users\\Sagar\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sagar\\source\\repos\\work\\Employee_CRUD_API\\Repository\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Dolphin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Sagar\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,8 +82,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\Dolphin\\source\\repos\\EmployeeCRUDApp\\Model\\Model.csproj": {
-                "projectPath": "C:\\Users\\Dolphin\\source\\repos\\EmployeeCRUDApp\\Model\\Model.csproj"
+              "C:\\Users\\Sagar\\source\\repos\\work\\Employee_CRUD_API\\Model\\Model.csproj": {
+                "projectPath": "C:\\Users\\Sagar\\source\\repos\\work\\Employee_CRUD_API\\Model\\Model.csproj"
               }
             }
           }

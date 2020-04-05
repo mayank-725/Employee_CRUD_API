@@ -689,19 +689,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Dolphin\\.nuget\\packages\\": {}
+    "C:\\Users\\Sagar\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Dolphin\\source\\repos\\EmployeeCRUDApp\\Model\\Model.csproj",
+      "projectUniqueName": "C:\\Users\\Sagar\\source\\repos\\work\\Employee_CRUD_API\\Model\\Model.csproj",
       "projectName": "Model",
-      "projectPath": "C:\\Users\\Dolphin\\source\\repos\\EmployeeCRUDApp\\Model\\Model.csproj",
-      "packagesPath": "C:\\Users\\Dolphin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Dolphin\\source\\repos\\EmployeeCRUDApp\\Model\\obj\\",
+      "projectPath": "C:\\Users\\Sagar\\source\\repos\\work\\Employee_CRUD_API\\Model\\Model.csproj",
+      "packagesPath": "C:\\Users\\Sagar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Sagar\\source\\repos\\work\\Employee_CRUD_API\\Model\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Dolphin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Sagar\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

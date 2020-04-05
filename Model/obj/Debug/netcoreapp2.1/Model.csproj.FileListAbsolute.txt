@@ -10,3 +10,15 @@ C:\Users\Dolphin\source\repos\EmployeeCRUDApp\Model\obj\Debug\netcoreapp2.1\Mode
 C:\Users\Dolphin\source\repos\EmployeeCRUDApp\Model\obj\Debug\netcoreapp2.1\Model.dll
 C:\Users\Dolphin\source\repos\EmployeeCRUDApp\Model\obj\Debug\netcoreapp2.1\Model.pdb
 C:\Users\Dolphin\source\repos\EmployeeCRUDApp\Model\obj\Debug\netcoreapp2.1\Model.genruntimeconfig.cache
+C:\Users\Sagar\source\repos\work\Employee_CRUD_API\Model\bin\Debug\netcoreapp2.1\Model.deps.json
+C:\Users\Sagar\source\repos\work\Employee_CRUD_API\Model\bin\Debug\netcoreapp2.1\Model.runtimeconfig.json
+C:\Users\Sagar\source\repos\work\Employee_CRUD_API\Model\bin\Debug\netcoreapp2.1\Model.runtimeconfig.dev.json
+C:\Users\Sagar\source\repos\work\Employee_CRUD_API\Model\bin\Debug\netcoreapp2.1\Model.dll
+C:\Users\Sagar\source\repos\work\Employee_CRUD_API\Model\bin\Debug\netcoreapp2.1\Model.pdb
+C:\Users\Sagar\source\repos\work\Employee_CRUD_API\Model\obj\Debug\netcoreapp2.1\Model.csprojAssemblyReference.cache
+C:\Users\Sagar\source\repos\work\Employee_CRUD_API\Model\obj\Debug\netcoreapp2.1\Model.csproj.CoreCompileInputs.cache
+C:\Users\Sagar\source\repos\work\Employee_CRUD_API\Model\obj\Debug\netcoreapp2.1\Model.AssemblyInfoInputs.cache
+C:\Users\Sagar\source\repos\work\Employee_CRUD_API\Model\obj\Debug\netcoreapp2.1\Model.AssemblyInfo.cs
+C:\Users\Sagar\source\repos\work\Employee_CRUD_API\Model\obj\Debug\netcoreapp2.1\Model.dll
+C:\Users\Sagar\source\repos\work\Employee_CRUD_API\Model\obj\Debug\netcoreapp2.1\Model.pdb
+C:\Users\Sagar\source\repos\work\Employee_CRUD_API\Model\obj\Debug\netcoreapp2.1\Model.genruntimeconfig.cache
