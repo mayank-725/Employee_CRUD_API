@@ -83,5 +83,16 @@ namespace Manager
 
             return result;
         }
+
+        /// <summary>
+        /// Logins the employee.
+        /// </summary>
+        /// <param name="email">The email.</param>
+        /// <param name="password">The password.</param>
+        /// <returns></returns>
+        public bool LoginEmployee(string email, string password)
+        {
+            return this.repo.LoginEmployee(email, password);
+        }
     }
 }

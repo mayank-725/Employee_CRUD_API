@@ -116,5 +116,20 @@ namespace EmployeeCRUDApp.Controller
         {
             return this.Manager.GetEmployee(id);
         }
+
+        [Route("LoginEmployee")]
+        [HttpPost]
+        public IActionResult LoginEmployee(string email, string password)
+        {
+            var result = this.Manager.LoginEmployee(email, password);
+            if (result == true)
+            {
+                return this.Ok(email);
+            }
+            else
+            {
+                return this.BadRequest();
+            }
+        }
     }
 } 

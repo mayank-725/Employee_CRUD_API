@@ -49,5 +49,13 @@ namespace Manager
         /// <param name="id">The identifier.</param>
         /// <returns>employee model</returns>
         EmployeeModel DeleteEmployee(int id);
+
+        /// <summary>
+        /// Logins the employee.
+        /// </summary>
+        /// <param name="email">The email.</param>
+        /// <param name="password">The password.</param>
+        /// <returns></returns>
+        bool LoginEmployee(string email, string password);
     }
 }

@@ -8,6 +8,7 @@
 namespace Repository
 {
     using System.Collections.Generic;
+    using System.Linq;
     using System.Threading.Tasks;
     using Model;
     using Repository.DBContext;
@@ -102,6 +103,23 @@ namespace Repository
             employee.State = Microsoft.EntityFrameworkCore.EntityState.Modified;
             var result = this.userDBContext.SaveChangesAsync();
             return result;
+        }
+
+        /// <summary>
+        /// Logins the employee.
+        /// </summary>
+        /// <param name="email">The email.</param>
+        /// <param name="password">The password.</param>
+        /// <returns></returns>
+        public bool LoginEmployee(string email, string password)
+        {
+            var result = userDBContext.Employees.Where(id => id.Email == email && id.Password == password);
+
+            if (result != null)
+            {
+                return true;
+            }
+            return false;
         }
     }
 }
