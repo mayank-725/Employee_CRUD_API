@@ -29,7 +29,7 @@
     </nav>
     <button class=" fa fa-user-plus btn btn-primary" id="employeebtn">Add Employee</button>
     <div class="container">
-        <p class="text-white display-4"> NO RECORD FOUND !!</p>
+        <p class="text-white display-4" id="record" style="display:none"> NO RECORD FOUND !!</p>
     </div>
     <div class="container">
         <table class="table table-hover bg-light">
@@ -55,6 +55,9 @@
         xHttp.onload = function () {
            
             var data = JSON.parse(xHttp.responseText);
+            if(data == null) {
+                document.getElementById("record").style.display == "block";
+            }
             console.log(data);
             var html = "";
             for (var a = 0; a < data.length; a++) {
