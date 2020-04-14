@@ -33,24 +33,25 @@ export default class Login extends Component {
     }
     render() {
         return (
-            <div className="main-div">
-                <div className="login-div">Login</div>
+            <div className="test">
+                <div className="login-div">Login Form</div>
                 <div className="main-Test-div">
-
                     <div className="email-div">
                         <input type="email" className="input-email-div" placeholder="Email" onChange={this.handleEmailChange} />
                     </div>
                     <div className="email-div">
                         <input type="password" className="input-email-div" placeholder="Password" onChange={this.handlePasswordChange} />
                     </div>
-
                 </div>
                 <div className="app-button">
                     <button className="submit" onClick={this.handleSubmitButton}>Submit</button>
                 </div>
-
+                <div className="links">
+                    <a href="/Sign-up">Sign up</a>
+                    <p className="paragrapgh"> | </p>
+                    <a href="/Sign-up">Forgot Password</a>
+                </div>
             </div>
-
         )
     }
-} 
+}
