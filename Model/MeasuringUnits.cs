@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Model
 {
-    class MeasuringUnits
+    public class MeasuringUnits
     {
         /// <summary>
         /// The centimeter

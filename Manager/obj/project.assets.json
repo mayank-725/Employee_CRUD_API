@@ -207,6 +207,29 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "compile": {
+          "bin/placeholder/Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Model.dll": {}
+        }
+      },
+      "Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Repository.dll": {}
+        }
       }
     }
   },
@@ -681,11 +704,23 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Model/1.0.0": {
+      "type": "project",
+      "path": "../Model/Model.csproj",
+      "msbuildProject": "../Model/Model.csproj"
+    },
+    "Repository/1.0.0": {
+      "type": "project",
+      "path": "../Repository/Repository.csproj",
+      "msbuildProject": "../Repository/Repository.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "Model >= 1.0.0",
+      "Repository >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -713,7 +748,14 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Sagar\\source\\repos\\work\\QuantityMeasurementBackend\\QuantityMeasurementBackendProject\\Model\\Model.csproj": {
+              "projectPath": "C:\\Users\\Sagar\\source\\repos\\work\\QuantityMeasurementBackend\\QuantityMeasurementBackendProject\\Model\\Model.csproj"
+            },
+            "C:\\Users\\Sagar\\source\\repos\\work\\QuantityMeasurementBackend\\QuantityMeasurementBackendProject\\Repository\\Repository.csproj": {
+              "projectPath": "C:\\Users\\Sagar\\source\\repos\\work\\QuantityMeasurementBackend\\QuantityMeasurementBackendProject\\Repository\\Repository.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -3,10 +3,11 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Repository.RepositoryInterface
+namespace Manager
 {
-    public interface IMeasurementRepository
+    public interface IMeasurementManager
     {
+
         decimal FeettoInch(MeasuringUnits value);
 
         decimal InchToFeet(MeasuringUnits value);
