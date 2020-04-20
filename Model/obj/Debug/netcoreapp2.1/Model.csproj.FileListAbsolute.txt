@@ -1,0 +1,12 @@
+C:\Users\Sagar\source\repos\work\QuantityMeasurementBackend\QuantityMeasurementBackendProject\Model\bin\Debug\netcoreapp2.1\Model.deps.json
+C:\Users\Sagar\source\repos\work\QuantityMeasurementBackend\QuantityMeasurementBackendProject\Model\bin\Debug\netcoreapp2.1\Model.runtimeconfig.json
+C:\Users\Sagar\source\repos\work\QuantityMeasurementBackend\QuantityMeasurementBackendProject\Model\bin\Debug\netcoreapp2.1\Model.runtimeconfig.dev.json
+C:\Users\Sagar\source\repos\work\QuantityMeasurementBackend\QuantityMeasurementBackendProject\Model\bin\Debug\netcoreapp2.1\Model.dll
+C:\Users\Sagar\source\repos\work\QuantityMeasurementBackend\QuantityMeasurementBackendProject\Model\bin\Debug\netcoreapp2.1\Model.pdb
+C:\Users\Sagar\source\repos\work\QuantityMeasurementBackend\QuantityMeasurementBackendProject\Model\obj\Debug\netcoreapp2.1\Model.csprojAssemblyReference.cache
+C:\Users\Sagar\source\repos\work\QuantityMeasurementBackend\QuantityMeasurementBackendProject\Model\obj\Debug\netcoreapp2.1\Model.csproj.CoreCompileInputs.cache
+C:\Users\Sagar\source\repos\work\QuantityMeasurementBackend\QuantityMeasurementBackendProject\Model\obj\Debug\netcoreapp2.1\Model.AssemblyInfoInputs.cache
+C:\Users\Sagar\source\repos\work\QuantityMeasurementBackend\QuantityMeasurementBackendProject\Model\obj\Debug\netcoreapp2.1\Model.AssemblyInfo.cs
+C:\Users\Sagar\source\repos\work\QuantityMeasurementBackend\QuantityMeasurementBackendProject\Model\obj\Debug\netcoreapp2.1\Model.dll
+C:\Users\Sagar\source\repos\work\QuantityMeasurementBackend\QuantityMeasurementBackendProject\Model\obj\Debug\netcoreapp2.1\Model.pdb
+C:\Users\Sagar\source\repos\work\QuantityMeasurementBackend\QuantityMeasurementBackendProject\Model\obj\Debug\netcoreapp2.1\Model.genruntimeconfig.cache
