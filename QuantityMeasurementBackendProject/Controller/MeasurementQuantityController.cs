@@ -75,7 +75,7 @@ namespace QuantityMeasurementBackendProject
             return this.BadRequest();
         }
 
-        [Route("KgtoGm")]
+        [Route("KilogramToGram")]
         [HttpPost]
         public IActionResult KilogramsToGrams(MeasuringUnits value)
         {
@@ -88,7 +88,7 @@ namespace QuantityMeasurementBackendProject
             return this.BadRequest();
         }
 
-        [Route("GmtoKg")]
+        [Route("GramToKilogram")]
         [HttpPost]
         public IActionResult GramsToKilograms(MeasuringUnits value)
         {

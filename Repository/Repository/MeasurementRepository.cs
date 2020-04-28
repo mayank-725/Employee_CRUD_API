@@ -15,7 +15,7 @@ namespace Repository
 
         public decimal FeettoInch(MeasuringUnits value)
         {
-            return value.Centimeter / 100;
+            return value.Feet * 12;
         }
 
         public decimal GramsToKilograms(MeasuringUnits value)
