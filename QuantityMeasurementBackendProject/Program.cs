@@ -17,7 +17,10 @@ namespace QuantityMeasurementBackendProject
         {
             BuildWebHost(args).Run();
 
-            MessageQueue messagingQueue = null;
+            MessagingQueue queue = new MessagingQueue();
+            queue.ReceiveMessage();
+
+            /*MessageQueue messagingQueue = null;
             string path = @".\Private$\messageStore";
             try
             {
@@ -30,7 +33,7 @@ namespace QuantityMeasurementBackendProject
                         msg.Formatter = new XmlMessageFormatter(new string[] { "System.String,mscorlib" });
                         string result = msg.Body.ToString();
                         messagingQueue.Receive();
-                        File.WriteAllText(@"C:\Users\Sagar\source\repos\work\QuantityMeasurementBackend\QuantityMeasurementBackendProject\QuantityMeasurementBackendProject\Receive.txt", result);
+                        File.WriteAllText(@"C:\Users\Sagar\source\repos\work\QuantityMeasurementBackend\QuantityMeasurementBackendProject\QuantityMeasurementBackendProject\TextRecieved.txt", result);
                     }
                     messagingQueue.Refresh();
                 }
@@ -42,7 +45,7 @@ namespace QuantityMeasurementBackendProject
             catch (Exception e)
             {
                 Console.WriteLine(e.Message);
-            }
+            }*/
 
         }
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Experimental.System.Messaging;
@@ -10,10 +11,10 @@ namespace QuantityMeasurementBackendProject
     {
        
 
-        public void SendMessage(string measurementType, decimal value)
+        public void SendMessage(string measurementType, decimal retrievedValue)
         {
             MessageQueue messageQueue = null;
-            string description = measurementType;
+            string type = measurementType;
             string path = @".\Private$\messageStore";
 
             try
@@ -27,9 +28,9 @@ namespace QuantityMeasurementBackendProject
                     MessageQueue.Create(path);
                     messageQueue = new MessageQueue(path);
                 }
-                string result = measurementType + value;
-                messageQueue.Send(result, description);
-                //return result;
+                string result = measurementType +":" +retrievedValue;
+                messageQueue.Send(result, type);
+                
             }
             catch
             {
@@ -39,7 +40,7 @@ namespace QuantityMeasurementBackendProject
 
         public void ReceiveMessage()
         {
-            MessagingQueue queue = new MessagingQueue();
+           
             MessageQueue MyQueue = null;
             string path = @".\Private$\messageStore";
             try
@@ -53,12 +54,13 @@ namespace QuantityMeasurementBackendProject
                         newMessage.Formatter = new XmlMessageFormatter(new string[] { "System.String,mscorlib" });
                         string result = newMessage.Body.ToString();
                         Console.WriteLine(result);
+                        File.WriteAllText(@"C:\Users\Sagar\source\repos\work\QuantityMeasurementBackend\QuantityMeasurementBackendProject\QuantityMeasurementBackendProject\TextRecieved.txt",result);
                         MyQueue.Receive();
                     }
                 }
                 else
                 {
-                    Console.WriteLine("No Message");
+                    Console.WriteLine("nothing to display");
                 }
             }
             catch (Exception e)

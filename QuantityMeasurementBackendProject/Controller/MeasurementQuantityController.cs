@@ -9,11 +9,14 @@ using Model;
 
 namespace QuantityMeasurementBackendProject
 {
+
     [Route("api/[controller]")]
     [ApiController]
     public class MeasurementQuantityController : ControllerBase
     {
         public IMeasurementManager measurementManager;
+
+        public MessagingQueue messagingQueue=new MessagingQueue();
 
         public MeasurementQuantityController(IMeasurementManager measurementManager)
         {
@@ -30,6 +33,8 @@ namespace QuantityMeasurementBackendProject
 
             if (result >= 0)
             {
+              messagingQueue.SendMessage("feet", result);
+
                 return this.Ok(result);
             }
             return this.BadRequest();
@@ -44,6 +49,7 @@ namespace QuantityMeasurementBackendProject
 
             if (result >= 0)
             {
+                messagingQueue.SendMessage("Inch", result);
                 return this.Ok(result);
             }
             return this.BadRequest();
@@ -57,6 +63,7 @@ namespace QuantityMeasurementBackendProject
 
             if (result >= 0)
             {
+                messagingQueue.SendMessage("Meter", result);
                 return this.Ok(result);
             }
             return this.BadRequest();
@@ -70,6 +77,7 @@ namespace QuantityMeasurementBackendProject
 
             if (result >= 0)
             {
+                messagingQueue.SendMessage("Centimeter", result);
                 return this.Ok(result);
             }
             return this.BadRequest();
@@ -79,10 +87,12 @@ namespace QuantityMeasurementBackendProject
         [HttpPost]
         public IActionResult KilogramsToGrams(MeasuringUnits value)
         {
+            
             var result = this.measurementManager.KilogramsToGrams(value);
 
             if (result >= 0)
             {
+                messagingQueue.SendMessage("Kilogram", result);
                 return this.Ok(result);
             }
             return this.BadRequest();
@@ -92,10 +102,12 @@ namespace QuantityMeasurementBackendProject
         [HttpPost]
         public IActionResult GramsToKilograms(MeasuringUnits value)
         {
+           
             var result = this.measurementManager.GramsToKilograms(value);
 
             if (result >= 0)
             {
+                messagingQueue.SendMessage("gram", result);
                 return this.Ok(result);
             }
             return this.BadRequest();
