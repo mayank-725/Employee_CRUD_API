@@ -6,6 +6,7 @@ using Manager;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Model;
+using Repository;
 
 namespace QuantityMeasurementBackendProject
 {
@@ -14,6 +15,8 @@ namespace QuantityMeasurementBackendProject
     [ApiController]
     public class MeasurementQuantityController : ControllerBase
     {
+       public  RedisCaching redis = new RedisCaching();
+
         public IMeasurementManager measurementManager;
 
         public MessagingQueue messagingQueue=new MessagingQueue();
@@ -23,6 +26,12 @@ namespace QuantityMeasurementBackendProject
             this.measurementManager = measurementManager;
         }
 
+        [Route("RedisCache")]
+        [HttpGet]
+        public string redisCacheValues(string key)
+        {
+            return redis.RedisConnection(key);
+        }
 
         // GET api/values
         [Route("FeettoInch")]

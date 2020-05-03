@@ -12,3 +12,4 @@ C:\Users\Sagar\source\repos\work\QuantityMeasurementBackend\QuantityMeasurementB
 C:\Users\Sagar\source\repos\work\QuantityMeasurementBackend\QuantityMeasurementBackendProject\Repository\obj\Debug\netcoreapp2.1\Repository.dll
 C:\Users\Sagar\source\repos\work\QuantityMeasurementBackend\QuantityMeasurementBackendProject\Repository\obj\Debug\netcoreapp2.1\Repository.pdb
 C:\Users\Sagar\source\repos\work\QuantityMeasurementBackend\QuantityMeasurementBackendProject\Repository\obj\Debug\netcoreapp2.1\Repository.genruntimeconfig.cache
+C:\Users\Sagar\source\repos\work\QuantityMeasurementBackend\QuantityMeasurementBackendProject\Repository\obj\Debug\netcoreapp2.1\Repository.csproj.CoreCompileInputs.cache

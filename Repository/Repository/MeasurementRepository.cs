@@ -8,34 +8,48 @@ namespace Repository
 {
     public class MeasurementRepository : IMeasurementRepository
     {
+        public RedisCaching redis = new RedisCaching();
+
         public decimal CentimetertoMeter(MeasuringUnits value)
         {
+            decimal result = value.Centimeter / 100;
+            redis.RedisConnection($"Centimeter", result.ToString());
             return value.Centimeter / 100;
         }
 
         public decimal FeettoInch(MeasuringUnits value)
         {
-            return value.Feet * 12;
+            decimal result= value.Feet * 12;
+            redis.RedisConnection($"Feet", result.ToString());
+            return result;
         }
 
         public decimal GramsToKilograms(MeasuringUnits value)
         {
-            return value.Gram / 1000;
+            decimal result = value.Gram / 1000;
+            redis.RedisConnection($"Grams", result.ToString());
+            return result;
         }
 
         public decimal InchToFeet(MeasuringUnits value)
         {
-            return value.Inch / 12;
+            decimal result = value.Inch / 12;
+            redis.RedisConnection($"Inch", result.ToString());
+            return result;
         }
 
         public decimal KilogramsToGrams(MeasuringUnits value)
         {
-            return value.KiloGram * 1000;
+            decimal result = value.KiloGram * 1000;
+            redis.RedisConnection($"Kilograms", result.ToString());
+            return result;
         }
 
         public decimal MetertoCentimeter(MeasuringUnits value)
         {
-            return value.Meter * 100;
+            decimal result = value.Meter * 100;
+            redis.RedisConnection($"Meter", result.ToString());
+            return result;
         }
     }
 }
